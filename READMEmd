@@ -8,11 +8,11 @@ cd digidoc4j
 ant
 ```
 
-User stories are described here:
+User stories are described here: 
 [https://www.pivotaltracker.com/s/projects/1110130](Pivotal tracker)
 
-To load libraries (including new and updated libraries) without performing
-a complete build: ant load.dependencies
+To load libraries (including new and updated libraries) without 
+performing a complete build: ant load.dependencies
 
 javadoc you can find: [http://open-eid.github.io/digidoc4j/](JavaDoc files)
 
@@ -22,7 +22,7 @@ To run tests:
 ant tests
 ```
 
-To build and run tests inside IEAD
+To build and run tests inside IDEA
 -----
 
 When using IDEA You only need to install IvyIDEA plugin.
@@ -50,4 +50,9 @@ Finally setup CheckStyle rules like so:
 Now You should be ready to run tests within IDEA.
 
 __Note:__ ClearTSLCache takes long time so please be patient
+
+Instructions for Eclipse users
+----
+
+__TODO:__ Will be added soon
 
