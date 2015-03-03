@@ -17,10 +17,9 @@
   <property name="ivy.home" value="${user.home}/.ant" />
   <property name="ivy.jar.dir" value="${ivy.home}/lib" />
   <property name="ivy.jar.file" value="${ivy.jar.dir}/ivy.jar" />
-  
-  <property file="ivy/version.properties"/>
-  <property name="lib.version" value="${publish.version}"/>
 
+  <property name="publish.version" value="1.0" />
+  <property name="lib.version" value="${publish.version}"/>
 
   <target name="version" unless="lib.version">
     <exec executable="sh" outputproperty="lib.version">
@@ -160,6 +159,12 @@
         <classpath refid="javac.classpath"/>
         <classpath>
           <pathelement location="build"/>
+        </classpath>
+        <classpath>
+          <pathelement location="test-tsl"/>
+        </classpath>
+        <classpath>
+          <pathelement location="testFiles"/>
         </classpath>
         <batchtest>
           <fileset dir="${build.dir}" includes="**/*Test.class"/>

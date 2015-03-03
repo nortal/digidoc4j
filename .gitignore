@@ -5,9 +5,12 @@
 /coverage
 /dist
 /.idea/workspace.xml
+/.idea/uiDesigner.xml
+
 /tmp
 /.idea/dictionaries/xp.xml
 *.log
+
 password.properties
 copy-dss-jars.sh
 /util
